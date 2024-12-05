@@ -1,0 +1,339 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style:none;
+	scroll-behavior: smooth;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+
+}
+/* section navbar */
+#navbar{
+	background-color: #f9f9f9;
+}
+#logo{
+	font-size: 36px;
+	font-weight: 700;
+	color: black;
+	text-shadow: 0px 1px 1px black;
+	margin-bottom: 5px;
+}
+#logo span{
+	color:#ffa500 ;
+}
+.navbar-toggler span{
+	color:#ffa500 ;
+}
+.navbar-nav{
+	margin-left: 20px;
+}
+.nav-item .nav-link{
+	font-size:16px ;
+	font-weight: 550;
+	color: black;
+	letter-spacing: 1px;
+	border-radius: 3px;
+	margin-right:10px ;
+	transition: 0.5s ease;
+}
+
+.nav-item .nav-link:hover{
+	background-color: #ffa500;
+	color: white;
+}
+#navbar form button{
+	background-color: orange;
+	color: black;
+	border: none;
+}
+/* section home */
+.home{
+	width: 100%;
+	height: 100vh;
+	background-image: url('backgroun.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+
+  
+}
+.home .content{
+	
+	text-align: center;
+	padding-top:400px ;
+}
+.home .content h5{
+	color: white;
+	font-size: 38px;
+	font-weight: 500;
+	text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+	color: white;
+	font-size: 70px;
+	font-weight: 550;
+	text-shadow: 0px 1px 1px black;
+	margin-top: 5px;
+}
+.changecontent::after{
+	content: '';
+	color: #ffa500;
+	text-shadow: 0px 1px 1px black;
+	animation:contenttext 10s infinite linear;
+}
+@keyframes contenttext {
+	0% {	 content: " France";}
+	10%{	content: " United States";}
+	15%{     content: " Austria"}
+	20%{	content: " Greece";}
+	30%{	content: " India";}
+	40%{	content: " Portugal";}
+	50%{	content: " Seoul";}
+	60%{	content: " Turkey";}
+	70%{	content: "  Italy";}
+	80%{	content: " Mexico";}
+	90%{	content: "  Germany";}
+	100%{	content: "  United Kingdom";}
+	
+}
+.home .content p{
+	color: white;
+	font-size: 15px;
+	font-weight: 600;
+	text-shadow: 0px 1px 1px black;
+	margin-top: 5px;
+}
+.home .content a{
+	padding: 10px;
+	color: black;
+	background:white;
+	letter-spacing: 2px;
+	font-weight: 500;
+	border-radius: 5px;
+	text-decoration: none;
+	
+	transition: 0.5s;
+}
+.home .content a:hover{
+	background:#ffa500;
+	color: white;
+}
+ @media  (max-widht:850px){
+	.home{
+		background-position:50% ;
+	}
+	
+ }
+ @media (max-widht:450px){
+	.home .content h5{
+		font-size: 16px;
+	}
+	.home .content h1{
+		font-size: 38px;
+	}
+	.home .content p{
+		font-size: 13px;
+	}
+
+ }
+
+ /* section book */
+.book{
+	background:#f9f9f9 ;
+	padding: 50px;
+	margin-bottom: 30px;
+
+}
+.main-text h1{
+	text-align: center;
+	text-shadow: 0px 1px 1px black;
+	font-weight:600 ;
+}
+.main-text h1 span{
+	color: #ffa500;
+}
+
+.form-img{
+	width: 100%;
+	border-radius:8px ;
+	box-shadow:0px 5px 5px -6px black ;
+}
+
+.book .row{
+	margin-top: 30px;
+}
+
+.book form input{
+	color: black;
+	border: none;
+	outline: none;
+	font-size: 15px;
+	border-radius: 10px;
+	box-shadow: 0px 5px 5px -5px grey;
+}
+.book form textarea{
+	border: none;
+	border-radius: 10px;
+	outline: none;
+	box-shadow: 0px 5px 5px -6px grey;
+}
+.book .submit{
+	background: #ffa500;
+	font-family: 550;
+	font-size: 16px;
+	color: white;
+	transition: 0.5s;
+}
+.book .submit:hover{
+	width: 120px;
+}
+
+@media (max-widht:765px){
+	.book{
+		padding: 0;
+	}
+	.main-text h1{
+		margin-top: 20px;
+	}
+}
+
+/* section packages */
+
+.main-txt h1{
+	margin-bottom: 30px ;
+	text-align: center;
+	font-weight:600 ;
+	color: black;
+	text-shadow: 0px 1px 1px black ;
+}
+
+.main-txt h1 span{
+	color: #ffa500;
+}
+
+.packages .card{
+	border-radius: 10px;
+	border:none ;
+   box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+   transition: 0.5s linear;
+	
+}
+.packages .card:hover{
+	transform: scale(1.03);
+}
+
+.packages .card .card-body{
+	background: transparent;
+}
+.packages .card .card-body h3{
+	font-size: 25px;
+	font-weight:600 ;
+}
+.packages .card .card-boy p{
+	font-size: 15px;
+}
+
+.star .checked{
+color: rgb(230, 177, 55);
+}	
+
+
+
+.star span{
+	color: black;
+}
+
+.btn{
+	background: #ffa500;
+	font-size: 15px;
+	font-weight: 550;
+	
+}
+
+/* section services */
+
+.main-header h1{
+	text-align: center;
+	font-weight:600 ;
+	text-shadow: 0px 1px 1px black;
+	margin-bottom: 30px;
+}
+.main-header h1 span{
+	color: #ffa500;
+}
+
+.services .card{
+	border-radius: 10px;
+	border: none;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+@media (max-width:991px){
+	.card-body h3{
+		font-size: 20px;
+		
+	}
+
+}
+
+/* section gallary */
+.main-headtext h1{
+	margin: 30px 0px;
+	text-align: center;
+	font-weight: 600;
+	color: black;
+	text-shadow: 0px 1px 1px black;
+}
+.main-headtext h1 span{
+	color: #ffa500;
+}
+
+.gallary .card{
+	border: none;
+}
+.gallary .card img {
+    width: 100%;          /* Kartın genişliğine göre resim genişliği */
+    height: 250px;        /* Sabit bir yükseklik */
+    object-fit: cover;    /* Resmin kırpılmasını sağlar ama orantıları korur */
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	transition: 0.5s linear;
+	
+}
+.gallary .card img:hover{
+	transform: scale(1.1);
+}
+
+/* section about */
+
+.main-head-about h1{
+	font-weight: 600;
+	color: black;
+	text-align: center;
+	text-shadow: 0px 1px 1px black;
+}
+.main-head-about h1 span{
+	color: #ffa500;
+}
+
+.img-style{
+	width: 100%;          /* Kartın genişliğine göre resim genişliği */
+    height: 350px;        /* Sabit bir yükseklik */
+    object-fit: cover;    /* Resmin kırpılmasını sağlar ama orantıları korur */
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.button{
+	background: #ffa500;
+	color: black;
+	font-weight: 550;
+	border: none;
+	border-radius: 10px;
+	transition: 0.3s linear;
+	
+}
+.button:hover{
+	width: 150px;
+}
